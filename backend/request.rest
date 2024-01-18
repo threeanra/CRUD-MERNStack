@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###GET DATA BY ID
+GET http://localhost:5000/users/65991aad09c247b6fe18fa41
+
+###FOR ADD DATA MANUALLY
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Maman",
+    "email": "email@gmail.com",
+    "gender": "Male"
+}
+
+###FOR REPLACE NEW DATA
+PATCH http://localhost:5000/users/65a4dee499c4630cc5f19579
+Content-Type: application/json
+
+{
+    "name": "Trian",
+    "email": "trian.radis448@gmail.com",
+    "gender": "Male"
+}
+
+###DELETE DATA
+DELETE http://localhost:5000/users/65991adf81f18a088178ed55
